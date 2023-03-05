@@ -19,3 +19,4 @@ Wiring example for ESP8266-based or RP-Pico modules
 
 How to set it up
 -------------
+Please refer to the Tutorial
