@@ -4,7 +4,8 @@ ST7565 LCD driver for micropython
 Description
 -----------
 This is micropython driver for LCDs based on **ST7565** controller.
-Only serial mode sopported.
+Only serial mode is supported.
+
 
 Wiring example for ESP8266-based or RP-Pico modules
 ----------------------------------------
