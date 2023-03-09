@@ -17,7 +17,7 @@
 
 ## **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32. The original display driver file was actually written for an ESP32.
-![](/picture/Pico%20-%20LM6020%20Schematics.png)
+![](/picture/LM6020%20testing.jpg)
 
 It is assumed the RP Pico is connected to the PC through USB with the Thonny IDE application installed on the PC and initiated through the Thonny IDE. Other IDE’s may work but have not been tested.
 
