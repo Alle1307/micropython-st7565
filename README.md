@@ -2,7 +2,7 @@
 # Instruction how to connect a LM6020c using micropython
 
 ## **Table of Contents**
-+ Preparation
++ [Preparation](/h2)
 + The LM6020c
 + Step 1 Wiring
 + Step 2 Set up the Integrated Development Environment (IDE)
@@ -16,11 +16,11 @@ In this example a Raspberry Pi Pico with MicroPython is used, but with some slig
 It is assumed the RP Pico is connected to a host PC (desktop, laptop or Raspberry Pi) through USB with the Thonny IDE application installed on the host PC  and initiated through the Thonny IDE. Other IDE’s work but have not been tested.
 
 ## **The LM6020c**
-The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet. It is fitted with a 8 wire flexible flat cable (ffc). An 8 pin 1mm ffc adapter board is required to connect it to the MCU.
+The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet. The display is fitted with an 8 wire flexible flat cable (ffc). An 8 pin 1mm ffc adapter board is required to connect it to the MCU, these can be ordered through the usual channels on internet.
 
 The LM6020 is fitted with a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
 
-Setting up a working system is therefor rather easy and can be done in some simple steps. All you need further is an 8 pin adapter board for 1mm ffc, they can be obtained through the usual channels on internet.
+Setting up a working system is therefor rather easy and can be done in some simple steps.
 ## **Step 1 Wiring**
 Connect the flat cable to the adapter board, which has the following layout and connect this board in turn to a RP Pico. Note that the numbering on this board is confusing and the correct numbering is on other side of the board!
 
