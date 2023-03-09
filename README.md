@@ -3,9 +3,9 @@
 
 ## **Table of Contents**
 
- +[Preparation](#__RefHeading___Toc1391_520338010)
++ [Preparation](#__RefHeading___Toc1391_520338010)
 
- +[The LM6020c](#__RefHeading___Toc1393_520338010)
++ [The LM6020c](#__RefHeading___Toc1393_520338010)
 
   [ Step 1 Wiring](#__RefHeading___Toc1395_520338010)
 
