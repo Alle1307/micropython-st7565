@@ -2,11 +2,11 @@
 
 **Table of Contents**
 
-[Preparation	2](#__RefHeading___Toc1391_520338010)
+[Preparation](#__RefHeading___Toc1391_520338010)
 
-[The LM6020	2](#__RefHeading___Toc1393_520338010)
+[The LM6020c](#__RefHeading___Toc1393_520338010)
 
-[ Step 1](#__RefHeading___Toc1395_520338010)
+[ Step 1 Wiring](#__RefHeading___Toc1395_520338010)
 
 [ Step 2](#__RefHeading___Toc1397_520338010)
 
@@ -42,15 +42,14 @@ Connect the flat cable to the adapter board, which has the following layout and 
 This is the schematics
 ## **Step 2 Set up the Integrated Development Environment (IDE)**
 It is recommended to use Thonny as your IDE connect this to your RP Pico.
-
 On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
 
-## **Step 3 Get the display software driverSave the **
+## **Step 3 Get the display software driver**
 Download the st7565.py driver, extract and save it.
 Click on the open icon. It should give you an option ‘Where to open from’ with two choices ‘This Computer’ or ‘ Raspberry Pi Pico’. Use this computer and get the downloaded st7565.py software driver. Save a copy on the RP Pico.
 
 Open a new file and copy the given demonstation program and paste it into Thonny,save this also on the RP Pico as demo.py. It is recommended to save a copy on your computer.
-## **Step 4**
+## **Step 4 Run the test demonstration**
 Copy the MicroPython demonstration program to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
 This demonstration program also demonstrates some framebuffer commands!
 
