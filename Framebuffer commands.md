@@ -1,12 +1,12 @@
 # **Framebuffer Commands**
 ## **Drawing primitive shapes**
-The following methods draw shapes onto the FrameBuffer.
+The following methods draw shapes onto the [FrameBuffer](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf).
 |<p> FrameBuffer function </p><p>eg display.fill(c) </p>|Description|
 | :-: | :-: |
-|f.fill(*c*)(https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.fill)|Fill the entire FrameBuffer with the specified color.|
+|f.fill(*c*)|Fill the entire FrameBuffer with the specified color.|
 |f.pixel(*x*, *y*[, *c*])|If *c* is not given, get the color value of the specified pixel. If *c* is given, set the specified pixel to the given color.|
-|f.line(*x1*, *y1*, *x2*, *y2*, *c*)|Draw a line from a set of coordinates using the given color and a thickness of 1 pixel. The [line](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.line) method draws the line up to a second set of coordinates whereas the [hline](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.hline) and [vline](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.vline) methods draw horizontal and vertical lines respectively up to a given length.|
-|f.vline(*x*, *y*, *h*, *c*)(https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.vline)||
+|f.line(*x1*, *y1*, *x2*, *y2*, *c*)|Draw a line from a set of coordinates using the given color and a thickness of 1 pixel. The [line] method draws the line up to a second set of coordinates whereas the [hline] and [vline](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.vline) methods draw horizontal and vertical lines respectively up to a given length.|
+|f.vline(*x*, *y*, *h*, *c*)||
 |f.hline(*x*, *y*, *w*, *c*)||
 |f.rect(*x*, *y*, *w*, *h*, *c*[, *f*])|<p>Draw a rectangle at the given location, size and color.</p><p>The optional *f* parameter can be set to True to fill the rectangle. Otherwise just a one pixel outline is drawn.</p>|
 |f.ellipse(*x*, *y*, *xr*, *yr*, *c*[, *f*, *m*])|<p>Draw an ellipse at the given location. Radii *xr* and *yr* define the geometry; equal values cause a circle to be drawn. The *c* parameter defines the color.</p><p>The optional *f* parameter can be set to True to fill the ellipse. Otherwise just a one pixel outline is drawn.</p><p>The optional *m* parameter enables drawing to be restricted to certain quadrants of the ellipse. The LS four bits determine which quadrants are to be drawn, with bit 0 specifying Q1, b1 Q2, b2 Q3 and b3 Q4. Quadrants are numbered counterclockwise with Q1 being top right.</p>|
