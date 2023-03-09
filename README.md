@@ -10,13 +10,14 @@
 + [Further experimenting](#further-experimenting)
 
 ## **Introduction**
-It happened that I came across about 20 LCD displays that looked interesting for my Raspberry Pi Pico experiments. These displays were salvaged from disassembled electronics at my Hamradio club. In this experiment a Raspberry Pi Pico with MicroPython is used to prove that it works. Although this display is appears to be obsolete there are similar displays on the market that can be used instead with some alterations like the driver.
+It happened that I came across about 20 LCD displays that looked interesting for my Raspberry Pi Pico experiments. These displays were salvaged from disassembled electronics at my Hamradio club. In this experiment a Raspberry Pi Pico with MicroPython is used to prove that it works. Although this display  appears to be obsolete there are similar displays on the market that can be used instead with some alterations like the wiring and the software driver.
 
 This display was a LM6020c and is a simple black and white 128x64 dots graphics LCD display. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1] is still available on internet. 
 
-From the datasheet it is found that the LM6020 contains a ST7565 display driver which has a serial interface and is fitted with an 8 wire flexible flat cable (ffc) to be connected to an MCU. In order to connect it to the Pico an 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required, these adapter boards can be ordered through the usual channels on internet.
+From the datasheet it is found that the LM6020 contains a ST7565 display driver which has a serial interface and is fitted with an 8 wire flexible flat cable (ffc) to be connected to a MCU and works on 3,3 Volts, this is perfectly suited to the Pico. 
 
 ## **Preparation**
+The whole experiment is set up on a standard breadboard and in order to connect the display to the Pico an 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required, these adapter boards can be ordered through the usual channels on internet.
 In this example a Raspberry Pi Pico with MicroPython is used to connect to the graphics display. The original display driver file was actually written for an ESP32, but with some slight alterations in the wiring it works on the RP Pico. 
 ![](/picture/LM6020%20testing.jpg)
 
