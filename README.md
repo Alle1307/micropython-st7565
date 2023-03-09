@@ -4,10 +4,11 @@
 ## **Table of Contents**
 + [Preparation](#preparation)
 + [The LM6020c](#the-lm6020c)
-+ [Step 1 Wiring](#Step 1 Wiring)
-+ Step 2 Set up the Integrated Development Environment (IDE)
-+ Step 3 Get the display software driver
-+ Step 4 Run the test program
++ [Step 1 Wiring](#step-1-wiring)
++ [Step 2 Set up the Integrated Development Environment (IDE)]()
++ [Step 3 Get the display software driver]()
++ [Step 4 Run the test program]
++ [Further experimenting]()
 
 ## **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32. The original display driver file was actually written for an ESP32.
@@ -50,6 +51,7 @@ Open a new file and copy the given demonstation program and paste it into Thonny
 Copy the MicroPython demonstration program to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
 This demonstration program also demonstrates some framebuffer commands!
 
+## **Further experimenting**
 The available commands for drawing in the FrameBuffer are described in a separate file in this repository.
 
 
