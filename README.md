@@ -40,13 +40,13 @@ Connect the flat cable to the adapter board, which has the following layout and 
 |8|BLA|Power|Backlight Positive Supply|3V3 via resistor|36|
 
 This is the schematics
-## **Step 2 **
-Download the st7565.py driver, extract and save it.
-## **Step 3**
+## **Step 2 Set up the Integrated Development Environment (IDE)**
 It is recommended to use Thonny as your IDE connect this to your RP Pico.
 
 On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
 
+## **Step 3 Get the display software driverSave the **
+Download the st7565.py driver, extract and save it.
 Click on the open icon. It should give you an option ‘Where to open from’ with two choices ‘This Computer’ or ‘ Raspberry Pi Pico’. Use this computer and get the downloaded st7565.py software driver. Save a copy on the RP Pico.
 
 Open a new file and copy the given demonstation program and paste it into Thonny,save this also on the RP Pico as demo.py. It is recommended to save a copy on your computer.
