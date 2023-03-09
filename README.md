@@ -1,5 +1,5 @@
 ﻿
-# Instruction how to connect LM6020 using micropython
+# Instruction how to connect a LM6020c using micropython
 
 **Table of Contents**
 
