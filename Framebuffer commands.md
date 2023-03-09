@@ -2,7 +2,7 @@
 ## **Drawing primitive shapes**
 The following methods draw shapes onto the [FrameBuffer](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf).
 |<p> FrameBuffer function </p><p>  e.g. display.fill(c)  </p>|Description|
-| :-: | :-: |
+| :------------: | :-: |
 |f.fill(*c*)|Fill the entire FrameBuffer with the specified color.|
 |f.pixel(*x*, *y*[, *c*])|If *c* is not given, get the color value of the specified pixel. If *c* is given, set the specified pixel to the given color.|
 |f.line(*x1*, *y1*, *x2*, *y2*, *c*)|Draw a line from a set of coordinates using the given color and a thickness of 1 pixel. The [line] method draws the line up to a second set of coordinates whereas the [hline] and [vline](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.vline) methods draw horizontal and vertical lines respectively up to a given length.|
