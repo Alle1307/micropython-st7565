@@ -17,13 +17,14 @@ This display was a LM6020c and is a simple black and white 128x64 dots graphics 
 From the datasheet it is found that the LM6020 contains a ST7565 display driver which has a serial interface and is fitted with an 8 wire flexible flat cable (ffc) to be connected to a MCU and works on 3,3 Volts, this is perfectly suited to the Pico. 
 
 ## **Preparation**
-The whole experiment is set up on a standard breadboard and in order to connect the display to the Pico an 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required, these adapter boards can be ordered through the usual channels on internet.
-In this example a Raspberry Pi Pico with MicroPython is used to connect to the graphics display. The original display driver file was actually written for an ESP32, but with some slight alterations in the wiring it works on the RP Pico. 
+The whole experiment is mounted on a standard breadboard and in order to connect the display to the Pico an 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required, these adapter boards can be ordered through the usual channels on internet. The board is fitted with an extra layer board underneath so it can bridge over the middle gap of the breadboard, otherwise the pins get shortcircuited. I have soldered a long header on one side of the Pico so the pins can also be used on the top.
+
+In this experiment a Raspberry Pi Pico with MicroPython is used to run the software. The original software display driver file was actually written for an ESP32, but with some slight alterations in the wiring it worked directly on the RP Pico. 
 ![](/picture/LM6020%20testing.jpg)
 
-It is assumed the RP Pico is connected to a host PC (desktop, laptop or Raspberry Pi) through USB with the Thonny IDE application installed on the host PC  and initiated through the Thonny IDE. Other IDE’s work but have not been tested.
+It is assumed the RP Pico is connected to a host PC (desktop, laptop or Raspberry Pi with desktop OS) through USB with the Thonny IDE application installed on the host PC and initiated through the Thonny IDE. Other IDE’s should work but have not been tested.
 
-On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
+In Thonny on the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment. This should should be visible in the shell window. If not please read the official Raspberry Pi - Getting started guide.
 
 Setting up a working system is therefor rather easy and can be done in some simple steps.
 
