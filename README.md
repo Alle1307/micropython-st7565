@@ -8,11 +8,11 @@
 
 [ Step 1 Wiring](#__RefHeading___Toc1395_520338010)
 
-[ Step 2](#__RefHeading___Toc1397_520338010)
+[ Step 2 Set up the Integrated Development Environment (IDE)](#__RefHeading___Toc1397_520338010)
 
-[ Step 3](#__RefHeading___Toc1280_4163719918)
+[ Step 3 Get the display software driver](#__RefHeading___Toc1280_4163719918)
 
-[ Step 4](#__RefHeading___Toc1282_4163719918)
+[ Step 4 Run the test program](#__RefHeading___Toc1282_4163719918)
 
 ## **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32.
@@ -49,7 +49,7 @@ Download the st7565.py driver, extract and save it.
 Click on the open icon. It should give you an option ‘Where to open from’ with two choices ‘This Computer’ or ‘ Raspberry Pi Pico’. Use this computer and get the downloaded st7565.py software driver. Save a copy on the RP Pico.
 
 Open a new file and copy the given demonstation program and paste it into Thonny,save this also on the RP Pico as demo.py. It is recommended to save a copy on your computer.
-## **Step 4 Run the test demonstration**
+## **Step 4 Run the test program**
 Copy the MicroPython demonstration program to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
 This demonstration program also demonstrates some framebuffer commands!
 
