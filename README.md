@@ -24,7 +24,7 @@ The LM6020 is a simple black and white graphics LCD display with according to th
 The LM6020 is fitted with a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
 
 Setting up a working system is therefor rather easy and can be done in some simple steps. All you need further is an 8 pin adapter board for 1mm ffc.
-## **Step 1**
+## **Step 1 Wiring**
 Connect the flat cable to the adapter board, which has the following layout and connect this board in turn to a RP Pico. Note that the numbering on this board is confusing and the correct numbering is on other side of the board!
 
 |**LM6020C Pin Description**|**Raspberry PI Pico**|
@@ -40,8 +40,8 @@ Connect the flat cable to the adapter board, which has the following layout and 
 |8|BLA|Power|Backlight Positive Supply|3V3 via resistor|36|
 
 This is the schematics
-## **Step 2**
-Download the driver from [GITHUB](https://github.com/nquest/micropython-st7565/blob/master/st7565.py)[^2], extract and save it.
+## **Step 2 **
+Download the st7565.py driver, extract and save it.
 ## **Step 3**
 It is recommended to use Thonny as your IDE connect this to your RP Pico.
 
