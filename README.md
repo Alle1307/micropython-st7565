@@ -3,7 +3,7 @@
 
 ## **Table of Contents**
 + [Preparation](#preparation)
-+ The LM6020c
++ [The LM6020c](#The LM6020c)
 + [Step 1 Wiring](#Step 1 Wiring)
 + Step 2 Set up the Integrated Development Environment (IDE)
 + Step 3 Get the display software driver
