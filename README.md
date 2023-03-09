@@ -10,7 +10,7 @@
 + [Further experimenting](#further-experimenting)
 
 ## **Introduction**
-It happened that I came across about 20 LCD displays that looked interesting for my Raspberry Pi Pico experiments. These displays were salvaged from disassembled electronics at my Hamradio club. In this experiment a Raspberry Pi Pico with MicroPython is used to prove that it works. Although this display  appears to be obsolete there are similar displays on the market that can be used instead with some alterations like the wiring and the software driver.
+It happened that I came across about 20 LCD displays that looked interesting for my Raspberry Pi Pico experiments. These displays were salvaged from disassembled electronics at my Hamradio club. In this experiment a Raspberry Pi Pico with MicroPython is used as a prove of concept. Although this display  appears to be obsolete there are similar displays on the market that can be used instead with some alterations like the wiring and the software driver.
 
 This display was a LM6020c and is a simple black and white 128x64 dots graphics LCD display. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1] is still available on internet. 
 
@@ -57,7 +57,7 @@ This demonstration program also demonstrates some framebuffer commands!
 ## **Further experimenting**
 The available commands for drawing in the FrameBuffer are described in a separate file in this repository.
 
-In addition I have added a GPS module to this configuration that will update the internal clock and determine the location in maidenhead locator as used by Ham radio operators. Read [here](/GPS%20experiment/Adding%20GPS.md) for further details.
+In addition I have added a GPS module to this configuration that will update the internal clock and determine the location in maidenhead locator as is used by Ham radio operators. Read [here](/GPS%20experiment/Adding%20GPS.md) for further details.
 
 
 [^1]: <https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1>
