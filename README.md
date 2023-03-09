@@ -8,20 +8,13 @@ Table of Contents**
 
 [The LM6020	2](#__RefHeading___Toc1393_520338010)
 
-[Step 1](#__RefHeading___Toc1395_520338010)
+[ Step 1](#__RefHeading___Toc1395_520338010)
 
-[Step 2](#__RefHeading___Toc1397_520338010)
+[ Step 2](#__RefHeading___Toc1397_520338010)
 
-[Step 3](#__RefHeading___Toc1280_4163719918)
+[ Step 3](#__RefHeading___Toc1280_4163719918)
 
-[Step 4](#__RefHeading___Toc1282_4163719918)
-
-[Demonstration program	5](#__RefHeading___Toc1407_520338010)
-[Annex 2 Framebuffer Commands	7](#__RefHeading___Toc1399_520338010)
-[Drawing primitive shapes	7](#__RefHeading___Toc1292_4163719918)
-[Drawing text	7](#__RefHeading___Toc1401_520338010)
-[Other methods	8](#__RefHeading___Toc1403_520338010)
-[Constants	8](#__RefHeading___Toc1405_520338010)
+[ Step 4](#__RefHeading___Toc1282_4163719918)
 
 #
 # **Preparation**
