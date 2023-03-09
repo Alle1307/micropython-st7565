@@ -54,7 +54,7 @@ This demonstration program also demonstrates some framebuffer commands!
 ## **Further experimenting**
 The available commands for drawing in the FrameBuffer are described in a separate file in this repository.
 
-In addition I have added a GPS module to this configuration that will update the internal clock and determine the location in maidenhead locator as used by Ham radio operators. Read [here] for further details.
+In addition I have added a GPS module to this configuration that will update the internal clock and determine the location in maidenhead locator as used by Ham radio operators. Read [here](/GPS%20experiment/Adding%20GPS.md) for further details.
 
 
 [^1]: <https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1>
