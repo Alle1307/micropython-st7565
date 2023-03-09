@@ -56,8 +56,8 @@ Open a new file and copy the given demonstation program and paste it into Thonny
 Copy the MicroPython demonstration program to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
 This demonstration program also demonstrates some framebuffer commands!
 
-The available commands for drawing in the FrameBuffer are described in Annex 2.
-#
+The available commands for drawing in the FrameBuffer are described in a separate file in this repository.
+
 
 [^1]: <https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1>
 [^2]: https://github.com/nquest/micropython-st7565/blob/master/st7565.py
