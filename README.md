@@ -5,8 +5,8 @@
 + [Preparation](#preparation)
 + [The LM6020c](#the-lm6020c)
 + [Step 1 Wiring](#step-1-wiring)
-+ [Step 2 Set up the Integrated Development Environment (IDE)]()
-+ [Step 3 Get the display software driver]()
++ [Step 2 Set up the Integrated Development Environment (IDE)](#step-2-set-up-the-integrated-development-environment-ide)
++ [Step 3 Get the display software driver](#step-3-get-the-display-software-driver)
 + [Step 4 Run the test program]
 + [Further experimenting]()
 
