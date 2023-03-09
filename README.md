@@ -16,7 +16,7 @@ In this example a Raspberry Pi Pico with MicroPython is used, but with some slig
 It is assumed the RP Pico is connected to a host PC (desktop, laptop or Raspberry Pi) through USB with the Thonny IDE application installed on the host PC  and initiated through the Thonny IDE. Other IDE’s work but have not been tested.
 
 ## **The LM6020c**
-The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet. The display is fitted with an 8 wire flexible flat cable (ffc). An 8 pin 1mm ffc adapter board is required to connect it to the MCU, these can be ordered through the usual channels on internet.
+The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet. The display is fitted with an 8 wire flexible flat cable (ffc). An 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required to connect it to the MCU, these can be ordered through the usual channels on internet.
 
 The LM6020 is fitted with a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
 
