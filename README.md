@@ -7,8 +7,8 @@
 + [Step 1 Wiring](#step-1-wiring)
 + [Step 2 Set up the Integrated Development Environment (IDE)](#step-2-set-up-the-integrated-development-environment-ide)
 + [Step 3 Get the display software driver](#step-3-get-the-display-software-driver)
-+ [Step 4 Run the test program]
-+ [Further experimenting]()
++ [Step 4 Run the test program](#step-4-run-the-test-program)
++ [Further experimenting](#further-experimenting)
 
 ## **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32. The original display driver file was actually written for an ESP32.
