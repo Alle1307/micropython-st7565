@@ -2,49 +2,34 @@
 **Instruction how to connect LM6020 using micropython**
 
 
-
-
-1
-
 Table of Contents**
 
 [Preparation	2](#__RefHeading___Toc1391_520338010)
-
 [The LM6020	2](#__RefHeading___Toc1393_520338010)
-
-[Step 1	3](#__RefHeading___Toc1395_520338010)
-
-[Step 2	4](#__RefHeading___Toc1397_520338010)
-
-[Step 3	4](#__RefHeading___Toc1280_4163719918)
-
-[Step 4	4](#__RefHeading___Toc1282_4163719918)
+[Step 1](#__RefHeading___Toc1395_520338010)
+[Step 2](#__RefHeading___Toc1397_520338010)
+[Step 3](#__RefHeading___Toc1280_4163719918)
+[Step 4](#__RefHeading___Toc1282_4163719918)
 
 [Annex 1 Demonstration program	5](#__RefHeading___Toc1407_520338010)
-
 [Annex 2 Framebuffer Commands	7](#__RefHeading___Toc1399_520338010)
-
 [Drawing primitive shapes	7](#__RefHeading___Toc1292_4163719918)
-
 [Drawing text	7](#__RefHeading___Toc1401_520338010)
-
 [Other methods	8](#__RefHeading___Toc1403_520338010)
-
 [Constants	8](#__RefHeading___Toc1405_520338010)
-
 
 #
 # **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32.
 
 It is assumed the RP Pico is connected to the PC through USB with the Thonny IDE application installed on the PC and initiated through the Thonny IDE. Other IDE’s may work but have not been tested.
-1. # **The LM6020**
+# **The LM6020**
 The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet.
 
 The LM6020 is fitted with a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
 
 Setting up a working system is therefor rather easy and can be done in some simple steps. All you need further is an 8 pin adapter board for 1mm ffc.
-1. # **Step 1**
+# **Step 1**
 Connect the flat cable to the adapter board, which has the following layout and connect this board in turn to a RP Pico. Note that the numbering on this board is confusing and the correct numbering is on other side of the board!
 
 |**LM6020C Pin Description**|**Raspberry PI Pico**|
@@ -80,7 +65,6 @@ The available commands for drawing in the FrameBuffer are described in Annex 2.
 # **Annex 2	Framebuffer Commands**
 ## **Drawing primitive shapes**
 The following methods draw shapes onto the FrameBuffer.
-
 |<p>FrameBuffer function</p><p>eg display.fill(c)</p>|Description|
 | :-: | :-: |
 |f.fill(*c*)[¶](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.fill)|Fill the entire FrameBuffer with the specified color.|
@@ -93,20 +77,17 @@ The following methods draw shapes onto the FrameBuffer.
 |f.poly(*x*, *y*, *coords*, *c*[, *f*])|<p>Given a list of coordinates, draw an arbitrary (convex or concave) closed polygon at the given x, y location using the given color.</p><p>The *coords* must be specified as a [array](https://docs.micropython.org/en/latest/library/array.html#module-array) of integers, e.g. array('h', [x0, y0, x1, y1, ... xn, yn]).</p><p>The optional *f* parameter can be set to True to fill the polygon. Otherwise just a one pixel outline is drawn.</p>|
 
 ## **Drawing text**
-
 |<p>FrameBuffer function</p><p>eg display.fill(c)</p>|Description|
 | :-: | :-: |
 |f.text(*s*, *x*, *y*[, *c*])|Write text to the FrameBuffer using the the coordinates as the upper-left corner of the text. The color of the text can be defined by the optional argument but is otherwise a default value of 1. All characters have dimensions of 8x8 pixels and there is currently no way to change the font.|
 ##
 ## **Other methods**
-
 |<p>FrameBuffer function (f)</p><p>eg display.fill(c)</p>|Description|
 | :-: | :-: |
 |f.scroll(*xstep*, *ystep*)|Shift the contents of the FrameBuffer by the given vector. This may leave a footprint of the previous colors in the FrameBuffer.|
 |f.blit(*fbuf*, *x*, *y*, *key=-1*, *palette=None*)|<p>Draw another FrameBuffer on top of the current one at the given coordinates. If *key* is specified then it should be a color integer and the corresponding color will be considered transparent: all pixels with that color value will not be drawn. (If the *palette* is specified then the *key* is compared to the value from *palette*, not to the value directly from *fbuf*.)</p><p>The *palette* argument enables blitting between FrameBuffers with differing formats. Typical usage is to render a monochrome or grayscale glyph/icon to a color display. The *palette* is a FrameBuffer instance whose format is that of the current FrameBuffer. The *palette* height is one pixel and its pixel width is the number of colors in the source FrameBuffer. The *palette* for an N-bit source needs 2\*\*N pixels; the *palette* for a monochrome source would have 2 pixels representing background and foreground colors. The application assigns a color to each pixel in the *palette*. The color of the current pixel will be that of that *palette* pixel whose x position is the color of the corresponding source pixel.</p>|
 
-1. ## **Constants**
-
+## **Constants**
 |<p>FrameBuffer function (f)</p><p>eg display.fill(c)</p>|Description|
 | :-: | :-: |
 |f.MONO\_VLSB|Monochrome (1-bit) color format This defines a mapping where the bits in a byte are vertically mapped with bit 0 being nearest the top of the screen. Consequently each byte occupies 8 vertical pixels. Subsequent bytes appear at successive horizontal locations until the rightmost edge is reached. Further bytes are rendered at locations starting at the leftmost edge, 8 pixels lower.|
@@ -117,7 +98,6 @@ The following methods draw shapes onto the FrameBuffer.
 |f.GS4\_HMSB|Grayscale (4-bit) color format|
 |f..GS8|Grayscale (8-bit) color format|
 
-7
 
 [^1]: <https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1>
 [^2]: https://github.com/nquest/micropython-st7565/blob/master/st7565.py
