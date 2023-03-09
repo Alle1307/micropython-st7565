@@ -1,7 +1,7 @@
 ﻿
-#*Instruction how to connect LM6020 using micropython*
+#**Instruction how to connect LM6020 using micropython**
 
-##**Table of Contents**
+**Table of Contents**
 
 [Preparation	2](#__RefHeading___Toc1391_520338010)
 
