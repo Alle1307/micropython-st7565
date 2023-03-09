@@ -41,7 +41,7 @@ Connect the flat cable to the adapter board, which has the following layout and 
 |7|/CS1|Input|<p>Chip Select</p><p>/CS1=L, enable access to the LCD module</p><p>/CS1=H, disable access to the LCD module</p>|GP22|29|
 |8|BLA|Power|Backlight Positive Supply|3V3 via resistor|36|
 
-![This is the schematics]()
+![This is the schematics](/picture/Pico%20-%20LM6020%20Schematics.png)
 ## **Step 2 Set up the Integrated Development Environment (IDE)**
 It is recommended to use Thonny as your IDE connect this to your RP Pico.
 On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
