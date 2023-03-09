@@ -1,7 +1,7 @@
 # **Framebuffer Commands**
 ## **Drawing primitive shapes**
 The following methods draw shapes onto the FrameBuffer.
-|<p>FrameBuffer function</p><p>eg display.fill(c)</p>|Description|
+|<p>FrameBuffer function</p><p>eg display.fill(c) </p>|Description|
 | :-: | :-: |
 |f.fill(*c*)[¶](https://docs.micropython.org/en/latest/library/framebuf.html#framebuf.FrameBuffer.fill)|Fill the entire FrameBuffer with the specified color.|
 |f.pixel(*x*, *y*[, *c*])|If *c* is not given, get the color value of the specified pixel. If *c* is given, set the specified pixel to the given color.|
