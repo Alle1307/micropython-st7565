@@ -50,8 +50,8 @@ Download the st7565.py driver, extract and save it.
 Click on the open icon. It should give you an option ‘Where to open from’ with two choices ‘This Computer’ or ‘ Raspberry Pi Pico’. Use this computer and get the downloaded st7565.py software driver. Save a copy on the RP Pico.
 
 Open a new file and copy the given demonstation program and paste it into Thonny,save this also on the RP Pico as demo.py. It is recommended to save a copy on your computer.
-## **Step 4 Run the test program**
-Copy the MicroPython demonstration program to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
+## **Step 3 Run the test program**
+Copy the MicroPython [demonstration program](/display_test.py) to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
 This demonstration program also demonstrates some framebuffer commands!
 
 ## **Further experimenting**
