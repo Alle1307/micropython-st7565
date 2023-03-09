@@ -4,16 +4,15 @@
 ## **Table of Contents**
 
 + [Preparation](#__RefHeading___Toc1391_520338010)
-
 + [The LM6020c](#__RefHeading___Toc1393_520338010)
 
-  [ Step 1 Wiring](#__RefHeading___Toc1395_520338010)
++ [ Step 1 Wiring](#__RefHeading___Toc1395_520338010)
 
-  [ Step 2 Set up the Integrated Development Environment (IDE)](#__RefHeading___Toc1397_520338010)
++ [ Step 2 Set up the Integrated Development Environment (IDE)](#__RefHeading___Toc1397_520338010)
 
-  [ Step 3 Get the display software driver](#__RefHeading___Toc1280_4163719918)
++ [ Step 3 Get the display software driver](#__RefHeading___Toc1280_4163719918)
 
-  [ Step 4 Run the test program](#__RefHeading___Toc1282_4163719918)
++ [ Step 4 Run the test program](#__RefHeading___Toc1282_4163719918)
 
 ## **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32. The original display driver file was actually written for an ESP32.
