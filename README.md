@@ -1,4 +1,4 @@
-﻿**Instruction how to connect LM6020 using micropython**
+﻿#**Instruction how to connect LM6020 using micropython
 
 **Table of Contents**
 
@@ -15,15 +15,16 @@
 [ Step 4 Run the test program](#__RefHeading___Toc1282_4163719918)
 
 ## **Preparation**
-In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32.
+In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32. The original display driver file was actually written for an ESP32.
 
 It is assumed the RP Pico is connected to the PC through USB with the Thonny IDE application installed on the PC and initiated through the Thonny IDE. Other IDE’s may work but have not been tested.
+
 ## **The LM6020c**
 The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet. It is fitted with a 8 wire flat cable (ffc). An 8 pin 1mm ffc adapter board is required to connect it to the MCU.
 
 The LM6020 is fitted with a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
 
-Setting up a working system is therefor rather easy and can be done in some simple steps. All you need further is an 8 pin adapter board for 1mm ffc.
+Setting up a working system is therefor rather easy and can be done in some simple steps. All you need further is an 8 pin adapter board for 1mm ffc, they can be obtained through the usual channels on internet.
 ## **Step 1 Wiring**
 Connect the flat cable to the adapter board, which has the following layout and connect this board in turn to a RP Pico. Note that the numbering on this board is confusing and the correct numbering is on other side of the board!
 
@@ -39,7 +40,7 @@ Connect the flat cable to the adapter board, which has the following layout and 
 |7|/CS1|Input|<p>Chip Select</p><p>/CS1=L, enable access to the LCD module</p><p>/CS1=H, disable access to the LCD module</p>|GP22|29|
 |8|BLA|Power|Backlight Positive Supply|3V3 via resistor|36|
 
-This is the schematics
+![This is the schematics]()
 ## **Step 2 Set up the Integrated Development Environment (IDE)**
 It is recommended to use Thonny as your IDE connect this to your RP Pico.
 On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
