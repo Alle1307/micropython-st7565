@@ -2,9 +2,9 @@
 # Instruction how to connect a LM6020c using micropython
 
 ## **Table of Contents**
-+ [Preparation]()
++ [Preparation](Preparation)
 + The LM6020c
-+ [Step 1 Wiring](/24)
++ [Step 1 Wiring](Step 1 Wiring)
 + Step 2 Set up the Integrated Development Environment (IDE)
 + Step 3 Get the display software driver
 + Step 4 Run the test program
