@@ -5,9 +5,8 @@
 + [Introduction](#introduction)
 + [Preparation](#preparation)
 + [Step 1 Wiring](#step-1-wiring)
-+ [Step 2 Set up the Integrated Development Environment (IDE)](#step-2-set-up-the-integrated-development-environment-ide)
-+ [Step 3 Get the display software driver](#step-3-get-the-display-software-driver)
-+ [Step 4 Run the test program](#step-4-run-the-test-program)
++ [Step 2 Get the display software driver](#step-3-get-the-display-software-driver)
++ [Step 3 Run the test program](#step-4-run-the-test-program)
 + [Further experimenting](#further-experimenting)
 
 ## **Introduction**
@@ -25,8 +24,10 @@ In this example a Raspberry Pi Pico with MicroPython is used to connect to an no
 
 It is assumed the RP Pico is connected to a host PC (desktop, laptop or Raspberry Pi) through USB with the Thonny IDE application installed on the host PC  and initiated through the Thonny IDE. Other IDE’s work but have not been tested.
 
+On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
 
 Setting up a working system is therefor rather easy and can be done in some simple steps.
+
 ## **Step 1 Wiring**
 Connect the flat cable to the adapter board, which has the following layout and connect this board in turn to a RP Pico. Note that the numbering on this board is confusing and the correct numbering is on other side of the board!
 
@@ -43,11 +44,8 @@ Connect the flat cable to the adapter board, which has the following layout and 
 |8|BLA|Power|Backlight Positive Supply|3V3 via resistor|36|
 
 ![This is the schematics](/picture/Pico%20-%20LM6020%20Schematics.png)
-## **Step 2 Set up the Integrated Development Environment (IDE)**
-It is recommended to use Thonny as your IDE connect this to your RP Pico.
-On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
 
-## **Step 3 Get the display software driver**
+## **Step 2 Get the display software driver**
 Download the st7565.py driver, extract and save it.
 Click on the open icon. It should give you an option ‘Where to open from’ with two choices ‘This Computer’ or ‘ Raspberry Pi Pico’. Use this computer and get the downloaded st7565.py software driver. Save a copy on the RP Pico.
 
