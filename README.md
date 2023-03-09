@@ -1,25 +1,30 @@
 ﻿
-# Instruction how to connect a LM6020c using micropython
+# Instruction how to connect Raspberry Pi Pico to a LM6020c graphics LCD display using micropython
 
 ## **Table of Contents**
++ [Introduction](#introduction)
 + [Preparation](#preparation)
-+ [The LM6020c](#the-lm6020c)
 + [Step 1 Wiring](#step-1-wiring)
 + [Step 2 Set up the Integrated Development Environment (IDE)](#step-2-set-up-the-integrated-development-environment-ide)
 + [Step 3 Get the display software driver](#step-3-get-the-display-software-driver)
 + [Step 4 Run the test program](#step-4-run-the-test-program)
 + [Further experimenting](#further-experimenting)
 
+## **Introduction**
+It happened that I came across about 20 LCD displays that looked interesting for my Raspberry Pi Pico experiments. These displays were salvaged from disassembled electronics at my Hamradio club. This display was a LM6020c.
+In this example a Raspberry Pi Pico with MicroPython is used to connect to this 128x64 Graphics LCD display. Although this display is obsolete there are similar displays on the market that can be used instead with some alterations like the driver.
+
+The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet. 
+
+The LM6020 contains a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
+The display is fitted with an 8 wire flexible flat cable (ffc) to be connected to an MCU. An 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required to connect it to the Pico, these boards can be ordered through the usual channels on internet.
+
 ## **Preparation**
-In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32. The original display driver file was actually written for an ESP32.
+In this example a Raspberry Pi Pico with MicroPython is used to connect to an nowad 128x64 Graphics. The original display driver file was actually written for an ESP32, but with some slight alterations in the wiring it should works on other MCU’s like the RP Pico. 
 ![](/picture/LM6020%20testing.jpg)
 
 It is assumed the RP Pico is connected to a host PC (desktop, laptop or Raspberry Pi) through USB with the Thonny IDE application installed on the host PC  and initiated through the Thonny IDE. Other IDE’s work but have not been tested.
 
-## **The LM6020c**
-The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet. The display is fitted with an 8 wire flexible flat cable (ffc). An 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required to connect it to the MCU, these can be ordered through the usual channels on internet.
-
-The LM6020 is fitted with a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
 
 Setting up a working system is therefor rather easy and can be done in some simple steps.
 ## **Step 1 Wiring**
