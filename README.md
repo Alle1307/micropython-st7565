@@ -1,8 +1,7 @@
 ﻿
-**Instruction how to connect LM6020 using micropython**
+#Instruction how to connect LM6020 using micropython*
 
-
-Table of Contents**
+##**Table of Contents**
 
 [Preparation	2](#__RefHeading___Toc1391_520338010)
 
@@ -16,18 +15,17 @@ Table of Contents**
 
 [ Step 4](#__RefHeading___Toc1282_4163719918)
 
-#
-# **Preparation**
+## **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32.
 
 It is assumed the RP Pico is connected to the PC through USB with the Thonny IDE application installed on the PC and initiated through the Thonny IDE. Other IDE’s may work but have not been tested.
-# **The LM6020**
+## **The LM6020**
 The LM6020 is a simple black and white graphics LCD display with according to the specs a layout of 128x 64 dots. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1].with more information can be found on the internetnet.
 
 The LM6020 is fitted with a ST7565 display driver which has a serial interface that can be used through a SPI interface on the MCU.
 
 Setting up a working system is therefor rather easy and can be done in some simple steps. All you need further is an 8 pin adapter board for 1mm ffc.
-# **Step 1**
+## **Step 1**
 Connect the flat cable to the adapter board, which has the following layout and connect this board in turn to a RP Pico. Note that the numbering on this board is confusing and the correct numbering is on other side of the board!
 
 |**LM6020C Pin Description**|**Raspberry PI Pico**|
@@ -43,17 +41,17 @@ Connect the flat cable to the adapter board, which has the following layout and 
 |8|BLA|Power|Backlight Positive Supply|3V3 via resistor|36|
 
 This is the schematics
-# **Step 2**
+## **Step 2**
 Download the driver from [GITHUB](https://github.com/nquest/micropython-st7565/blob/master/st7565.py)[^2], extract and save it.
-# **Step 3**
+## **Step 3**
 It is recommended to use Thonny as your IDE connect this to your RP Pico.
 
 On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
 
 Click on the open icon. It should give you an option ‘Where to open from’ with two choices ‘This Computer’ or ‘ Raspberry Pi Pico’. Use this computer and get the downloaded st7565.py software driver. Save a copy on the RP Pico.
 
-Open a new file and copy the given demonstation program from Annex 1 and paste it into Thonny,save this also on the RP Pico as demo.py. It is recommended to save a copy on your computer.
-# **Step 4**
+Open a new file and copy the given demonstation program and paste it into Thonny,save this also on the RP Pico as demo.py. It is recommended to save a copy on your computer.
+## **Step 4**
 Copy the MicroPython demonstration program to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
 This demonstration program also demonstrates some framebuffer commands!
 
