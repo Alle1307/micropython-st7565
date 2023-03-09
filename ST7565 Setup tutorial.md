@@ -32,7 +32,7 @@ Table of Contents**
 
 [Constants	8](#__RefHeading___Toc1405_520338010)
 
-5
+
 #
 # **Preparation**
 In this example a Raspberry Pi Pico with MicroPython is used, but with some slight alterations it should work on other MCU’s like an ESP32.
@@ -60,9 +60,9 @@ Connect the flat cable to the adapter board, which has the following layout and 
 |8|BLA|Power|Backlight Positive Supply|3V3 via resistor|36|
 
 This is the schematics
-1. # **Step 2**
+# **Step 2**
 Download the driver from [GITHUB](https://github.com/nquest/micropython-st7565/blob/master/st7565.py)[^2], extract and save it.
-1. # **Step 3**
+# **Step 3**
 It is recommended to use Thonny as your IDE connect this to your RP Pico.
 
 On the bottom line at the right there is a remark showing which environment it is using. It should read Micropython (Raspberry Pi Pico), if not click on this line and select the correct environment.
@@ -70,7 +70,7 @@ On the bottom line at the right there is a remark showing which environment it i
 Click on the open icon. It should give you an option ‘Where to open from’ with two choices ‘This Computer’ or ‘ Raspberry Pi Pico’. Use this computer and get the downloaded st7565.py software driver. Save a copy on the RP Pico.
 
 Open a new file and copy the given demonstation program from Annex 1 and paste it into Thonny,save this also on the RP Pico as demo.py. It is recommended to save a copy on your computer.
-1. # **Step 4**
+# **Step 4**
 Copy the MicroPython demonstration program to Thonny and save it on the RP Pico as Display\_test.py or whatever name you can think of and run it.
 
 This demonstration program also demonstrates some framebuffer commands!
@@ -78,7 +78,7 @@ This demonstration program also demonstrates some framebuffer commands!
 The available commands for drawing in the FrameBuffer are described in Annex 2.
 #
 # **Annex 2	Framebuffer Commands**
-1. ## **Drawing primitive shapes**
+## **Drawing primitive shapes**
 The following methods draw shapes onto the FrameBuffer.
 
 |<p>FrameBuffer function</p><p>eg display.fill(c)</p>|Description|
@@ -92,7 +92,7 @@ The following methods draw shapes onto the FrameBuffer.
 |f.ellipse(*x*, *y*, *xr*, *yr*, *c*[, *f*, *m*])|<p>Draw an ellipse at the given location. Radii *xr* and *yr* define the geometry; equal values cause a circle to be drawn. The *c* parameter defines the color.</p><p>The optional *f* parameter can be set to True to fill the ellipse. Otherwise just a one pixel outline is drawn.</p><p>The optional *m* parameter enables drawing to be restricted to certain quadrants of the ellipse. The LS four bits determine which quadrants are to be drawn, with bit 0 specifying Q1, b1 Q2, b2 Q3 and b3 Q4. Quadrants are numbered counterclockwise with Q1 being top right.</p>|
 |f.poly(*x*, *y*, *coords*, *c*[, *f*])|<p>Given a list of coordinates, draw an arbitrary (convex or concave) closed polygon at the given x, y location using the given color.</p><p>The *coords* must be specified as a [array](https://docs.micropython.org/en/latest/library/array.html#module-array) of integers, e.g. array('h', [x0, y0, x1, y1, ... xn, yn]).</p><p>The optional *f* parameter can be set to True to fill the polygon. Otherwise just a one pixel outline is drawn.</p>|
 
-1. ## **Drawing text**
+## **Drawing text**
 
 |<p>FrameBuffer function</p><p>eg display.fill(c)</p>|Description|
 | :-: | :-: |
