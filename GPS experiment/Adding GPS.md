@@ -4,3 +4,4 @@ I decided to add a GPS module and use this to synchronize the RTC in the Pico an
 The GPS outputs serial data which can be read by the Pico's UART. The GPS module must be powerd also with 3,3V. The Rx of the Pico must be connected to the Tx of the GPS module.
 Also I have decided to monitor the PPS signal. When this is not present the module is not receiving any signal and this has caused some unexpected behaviour while running the program.
 ## Schematics
+![This is the schematics](/picture/GPS_Tracker.png)
