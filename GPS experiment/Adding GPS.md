@@ -6,5 +6,5 @@ Also I have decided to monitor the PPS signal. When this is not present the modu
 ## Schematics
 ![This is the schematics](/picture/GPS-Tracker.png)
 ## Software
-A little [UART-test program](./UART-Test.py) has been added in order to check the correct working of the communication between the GPS-module and the Pico. When this works correctly you should see the serial output as NMEA lines in your shell window.
+A little [UART-test program](./UART-test.py) has been added in order to check the correct working of the communication between the GPS-module and the Pico. When this works correctly you should see the serial output as NMEA lines in your shell window.
 When that works it is time to work with the received GPS signals. Download the [GPS-Tracker.py software](./GPS-Tracker.py) and run it.
