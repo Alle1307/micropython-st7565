@@ -14,7 +14,7 @@ It happened that I came across about 20 LCD displays that looked interesting for
 
 This display was a LM6020c and is a simple black and white 128x64 dots graphics LCD display. The complete [datasheet](https://datasheetspdf.com/pdf-file/1397601/TOPWAY/LM6020CCW/1) [^1] is still available on internet. 
 
-From the datasheet it is found that the LM6020 contains a ST7565 display driver which has a serial interface and is fitted with an 8 wire flexible flat cable (ffc) to be connected to a MCU and works on 3,3 Volts, this is perfectly suited to the Pico. 
+From the datasheet it is found that the LM6020 contains a ST7565 display driver and has a serial interface fitted with an 8 wire flexible flat cable (ffc) to be connected to a MCU. The display works on 3,3 Volts which is perfectly suited to the Pico. 
 
 ## **Preparation**
 The whole experiment is mounted on a standard breadboard and in order to connect the display to the Pico an 8 pin 1mm ffc adapter board (FPC-8P 1.0mm) is required, these adapter boards can be ordered through the usual channels on internet. The board is fitted with an extra layer board underneath so it can bridge over the middle gap of the breadboard, otherwise the pins get shortcircuited. I have soldered a long header on one side of the Pico so the pins can also be used on the top.
