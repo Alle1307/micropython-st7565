@@ -9,4 +9,4 @@ Also I have decided to monitor the PPS signal. When this is not present the modu
 A little [UART-test program](./UART_test.py) has been added in order to check the correct working of the communication between the GPS-module and the Pico. When this works correctly you should see the serial output as NMEA lines in your shell window.
 When that works it is time to work with the received GPS signals. Download the [GPS-Tracker.py software](./GPS-Tracker.py) and run it.
 
-When everything runs properly make a copy of this program and store it as main.py. It can then be run from a battery. Also a reset button from the RUN pin to GND may be added which in case there are problems. This should start te main.py program again.
+When everything runs properly make a copy of this program and store it as main.py. It can then be run from a battery. Also a reset button from the RUN pin to GND may be added which in case there are problems. This should start the main.py program again.
