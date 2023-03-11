@@ -1,5 +1,5 @@
 ﻿
-# Instruction how to connect Raspberry Pi Pico to a LM6020c graphics LCD display using micropython
+# Instruction how to make a 128x64 graphics LCD display with ST7565 driver work on a Raspberry Pi Pico using micropython
 
 ## **Table of Contents**
 + [Introduction](#introduction)
