@@ -5,3 +5,7 @@ The GPS outputs serial data which can be read by the Pico's UART. The GPS module
 Also I have decided to monitor the PPS signal. When this is not present the module is not receiving any signal and this has caused some unexpected behaviour while running the program.
 ## Schematics
 ![This is the schematics](/picture/GPS-Tracker.png)
+## Software
+A little UART-test program has been added in order to check the correct working of the communication between the GPS-module and the Pico
+
+Download the GPS-Tracker.py software and 
